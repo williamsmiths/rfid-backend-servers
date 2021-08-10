@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [{ "src": "/src/index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/api/user/singup",
+      "dest": "/src/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/user/singin",
+      "dest": "/src/index.js",
+      "methods": ["POST"]
+    }
+  ]
+}
